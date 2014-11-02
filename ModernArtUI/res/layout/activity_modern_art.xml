@@ -1,66 +1,82 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:baselineAligned="false"
-    android:orientation="vertical" 
-    android:background="#EE82EE">
+    android:background="#000000"
+    android:orientation="vertical" >
 
     <LinearLayout
-        android:layout_width="50dp"
-        android:layout_height="match_parent"
-        android:background="#FFD700"
-        android:baselineAligned="true"
-        android:orientation="horizontal" >
-
-        <LinearLayout
-            android:id="@+id/right_top"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical" >
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/right_bottom"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical" >
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
+        android:layout_weight="6"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:baselineAligned="true"
+        android:baselineAligned="false"
         android:orientation="horizontal" >
 
         <LinearLayout
-            android:id="@+id/left_top"
+            android:layout_weight="4"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_weight="50"
+            android:layout_height="match_parent"
             android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@color/txtColor1" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/txtColor2" />
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/center"
+            android:layout_weight="3"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_weight="50"
+            android:layout_height="match_parent"
             android:orientation="vertical" >
-        </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/left_bottom"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_weight="50"
-            android:orientation="vertical" >
-        </LinearLayout>
+            <TextView
+                android:id="@+id/text3"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="2dp"
+                android:background="@color/txtColor3" />
 
+            <TextView
+                android:id="@+id/text4"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/txtColor4" />
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/txtColor5" />
+        </LinearLayout>
     </LinearLayout>
-    
+
     <SeekBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="255" />
 
 </LinearLayout>
